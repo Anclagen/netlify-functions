@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-const guitars = require("../guitarData.js");
+let guitars = require("../guitarData.js");
 
 exports.handler = async (event) => {
   const { httpMethod, body } = event;
