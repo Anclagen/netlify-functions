@@ -23,6 +23,16 @@ exports.handler = async (event) => {
     };
   }
 
+  if (httpMethod === "DELETE") {
+    const id = JSON.parse(body);
+    guitars = guitars.filter((guitar) => guitar.id !== id);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify(newGuitar),
+    };
+  }
+
   // Handle unsupported methods
   return {
     statusCode: 405,
