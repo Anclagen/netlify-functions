@@ -1,0 +1,17 @@
+{
+  "name": "netlifyfunctionstest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "netlify-cli": "^18.0.3",
+    "uuid": "^11.0.5"
+  }
+}
